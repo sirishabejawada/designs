@@ -1,0 +1,186 @@
+//arrays
+
+var journey=["ticket","date","day","time","amount","orderno"]
+journey.push("special entry darsanam","dec 1st","tuesday","3.30 am",500,010600013554)
+ for (i in journey){
+   console.log(journey[i])
+ }
+ console.log(journey[3])
+ 
+ //code stop and data validation using functio
+
+ function companey( name,age,gender,email,idcard,city,state){
+   if(age>=28){
+     console.log("you are not eligible for job")
+     return
+   }
+   switch(idcard){
+     case "adharcard":
+       number="ASUPB590F"
+       break;
+      case "pancard":
+        number="OSP456"
+        break;
+      case "passport":
+        number=3839975
+        break;
+   }
+   console.log(name,age,gender,email,number,city,state)
+ }
+ companey("hcl", 23,"female","sirishabejawada41@gmail.com","passport","ongole","ap")
+
+
+//code stop and data validation using class
+
+class office{
+  constructor(name,age,gender,email,idcard,city,state){
+   this.name=name
+    this.age=age
+    this.gender=gender
+    this.email=email
+    this.idcard=idcard
+    switch(idcard){
+     case "adharcard":
+       this.number="yes"
+       break;
+      case "pancard":
+        this.number="yes"
+        break;
+      case "passport":
+        this.number="no"
+        break;
+   }
+    this.city=city
+    this.state=state
+  }
+  getinfo(){
+    if(this.age>=28){
+     console.log("you are not eligible for job")
+     return
+   }
+   
+    
+    console.log(this.name,this.gender,this.age,this.number)
+}
+}
+var siri=new office("hcl", 22,"female","sirishabejawada41@gmail.com","pancard","ongole","ap")
+siri.getinfo()
+
+//function
+
+function creditcard(){
+  var creditcardnumber=614649675938152
+  var outstanding=571.36
+  var minimum=272.36
+  console.log(creditcardnumber,outstanding,minimum)
+}
+creditcard()
+
+// class
+
+class jai{
+  outstanding=571.36
+ minimum=234.89
+  console.log(minimum)
+}
+var rani=new jai()
+
+//inheritance
+
+class theater{
+  constructor(theatername,screen,moviename,seatclass){
+    
+    this.name=theatername
+    this.screen=screen
+    this.movie=moviename
+    this.class=seatclass
+    
+  }
+  
+}
+var movie=new theater("pssmultiplex","screen3","jvt","c1,c2,c3,c4,c5")
+class snackes{
+
+class fun extends theater,snakes{
+  constructor(ticketprice,numboftickets,seatnumbs,totalamount)
+  {
+    super("pssmultiplex","screen3","jvt","c1,c2,c3,c4,c5")
+    this.ticket=ticketprice 
+    this.numb=numboftickets
+    this.seat=seatnumbs
+    this.total=totalamount
+  }
+  display(){
+    console.log(this.seat,this.ticket,this.class)
+  }
+  
+}
+var comedy=new fun("first",1050,5,750)
+
+comedy.display()
+ 
+//encapsulation 
+
+class bank{
+  constructor(bankname,date,time,atmno,cardno,branch){
+    this.bankname=bankname
+    this.date=date
+    this.time=time
+    this.atmno=atmno
+    this.cardno=cardno
+    this.branch=branch
+    
+  }
+  display(){
+    console.log(this.bankname,this.time,this.date)
+  }
+}
+var varun=new bank("sbi bank","29_05_14","19:48","SJNBL48","XXXXXXXXXXXXXXXXX0516","banglor")
+varun.display()
+
+ 
+//array
+
+var students=["abhi","priya","raju"]
+students.push("vikram","mani")
+for(i in students){
+  console.log(students[i])
+}
+
+//encapsilation
+
+class vehicle{
+  constructor(vehicletype,colour,engine,companey)
+  {
+     this.vehicle=vehicletype
+     this.colour=colour
+     this.enginenum=engine
+     this.companey=companey
+  }
+  display()
+  {
+    console.log(this.vehicle,this.enginenum)
+  }
+}
+var info=new vehicle("light motor vehicle-car","red","kp98gtyihh45779","bmw")
+info.display()
+
+// function
+
+function properties(){
+  var rating=4.5
+  var processer="intel@coretm i5-2450 cpu"
+  var systemtype="64-bit"
+  var cpname="balu-pc"
+  console.log(systemtype)
+}
+properties()
+
+
+
+
+
+
+ 
+
+ 
