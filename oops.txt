@@ -1,0 +1,195 @@
+//design 1
+var color="blue"
+var price=40
+console.log(color)
+
+//design 2
+function system(){
+   var rating=45
+   var processer="intelcore i5.2450cpu"
+   var type="64bit operating system"
+   console.log(rating)
+   console.log(processer)
+}
+system() 
+
+//design 2.1
+function processer(designation,name,location){
+  switch(location){
+    case "hcl":
+       place="hyd"
+      break
+    case "tcs":
+      place="bang"
+      break
+  }
+  console.log(designation,name,place)
+}
+processer("programer","junior","tcs")
+
+
+//design 3
+
+//class tv{
+  //channel="maa"
+ // number=10
+  //console.log(channel)
+//}
+//var home=new tv()
+
+//design 4
+
+class details{
+  constructor(ac,id,ipadd){
+     this.account=ac
+     this.user=id
+     this.ress=ipadd
+  }
+  
+}
+var balaji = new details(56798652,11128550,"10.247.77.9")
+
+
+class biodata extends details{
+  constructor(n,e,d,a,num){
+    super(56798652,11128550,"10.247.77.9")
+    this.name=n
+    this.education=e
+    switch(e){
+      case 0:
+        this.study="btech"
+        break;
+      case 1:
+        this.study="degree"
+        break;
+      case 2:
+        this.study="ms"
+        break;
+    }
+    this.dateofbirth=d
+    this.address=a
+    this.number=num
+  }
+    display(){
+    console.log(this.address,this.number,this.study,this.ress)
+  }
+}
+var siri= new biodata("siri",2,24,"kandukur",9866321091)
+var ramya=new biodata("ramya",1,28,"ongole",9553653194)
+siri.display()
+ramya.display()
+
+//desin 5
+ let fruits=["apple","banana","orange"];
+ fruits.push("grapes","papaya")
+ 
+ for(i in fruits)
+{
+console.log(fruits[i])
+}
+ //design 6
+function atm(minbalance,limit){
+  if(limit>10000){
+    console.log("draw limited  amount")
+    return
+  }
+  
+  switch(minbalance){
+    case "card1":
+       bal=8000
+       break
+    case "card2":
+      bal=4000
+      break
+  }
+  console.log(bal)
+}
+atm("card1",11000)
+
+
+
+
+class money{
+  constructor(minbal,limit){
+   this.limit=limit
+  if(limit>=10000){
+    this.limit="draw limited amount"
+          return
+  }
+  this.min=minbal
+
+  }
+  getmoney(){
+    console.log(this.min,this.limit)
+}
+}
+var siri=new money(500,1000)
+siri.getmoney()
+var priya=new money(1000,11000)
+priya.getmoney()
+
+
+function atm(minbalance,limit){
+  if(limit>10000){
+    console.log("draw limited  amount")
+          return
+  }
+  
+  switch(minbalance){
+    case "card1":
+      if (limit<500){
+       bal="have to be deposit"
+       
+      }
+       break
+    case "card2":
+      bal=4000
+      break
+  }
+  console.log(bal)
+}
+atm("card2",5000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
