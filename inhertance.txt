@@ -1,0 +1,204 @@
+//inheritence using 3 classes
+
+class hospitel{
+  constructor(pname,pid,pphone,bill,age,gender,fasting)
+  {
+    this.patientname=pname
+    this.patientid=pid
+    this.patientphone=pphone
+     this.fasting=fasting
+    this.bill=bill
+    switch(this.bill)
+    {
+      case "blood":
+      this.amount=280
+      break;
+      case "scan":
+      this.amount=1500
+      break;
+      case "xray":
+      this.amount=800
+      break;
+      }
+    this.age=age
+    this.gender=gender
+   
+  }
+  test()
+  {
+    console.log(this.patientname,this.amount,this.fasting)
+  }
+}
+var siri=new hospitel("raju",2378,7898273734,"scan",11,"femail",13)
+siri.test()
+
+class med extends hospitel{
+  constructor(timings,roomnum)
+  {
+    super("raju",2378,7898273734,"scan",11,"femail",1)
+    this.timings=timings
+    this.room=roomnum
+  }
+  
+disk()
+{
+  console.log(this.timings,this.room)
+  }
+    }
+var priya=new med(11,567)
+priya.disk()
+
+class floores extends med{
+  constructor(rnum,floor)
+  {
+    super(7,567)
+        this.rnum=rnum
+        this.floor=floor
+    
+  }
+  display(){
+    console.log(this.rnum,this.timings,this.gender)
+  }
+}
+  var ramya=new floores(590,1)
+  ramya.display()
+
+//polymorphisem
+
+class square{
+    draw()
+    {
+      console.log( "i am square")
+    }
+  }
+  class circle extends square
+  {
+    apple()
+    {
+      console.log ("i am circle")
+    }
+  }
+  class triangle extends circle{
+    ball()
+    {
+      console.log( "i am triangle")
+    }
+  }
+  
+  var shape=new square()
+  shape.draw()
+  var cir=new circle()
+  cir.apple()
+  var tri=new triangle()
+  tri.ball()
+  
+  //polymorphisem
+
+  class dancer{
+  constructor(dancetype,schoolname,place)
+  {
+    this.type=dancetype
+    this.name=schoolname
+    this.place=place
+  }
+  dancer(d)
+  {
+    this.dancer=d
+  }
+  learn(w)
+  {
+    this.what=w
+    switch(this.what)
+    {
+      case "daily":
+       console.log("award")
+       break
+      case "halfday":
+       console.log("dancer")
+       break
+      case "anhour":
+        console.log("not a dancer")
+        break
+    }
+  }
+}
+
+class developer extends dancer{
+ designation()
+ {
+    console.log("full stack developer")
+  }
+ learn(code)
+ {
+   this.code=code
+   switch(this.code)
+   {
+      case "daily":
+       console.log("fastly get a job")
+       break
+      case "halfday":
+       console.log("slowly get a job")
+       break
+      case "anhour":
+        console.log("no job")
+        break
+    }
+   
+    
+  }
+} 
+var priya=new developer()
+priya.learn("anhour")
+var papa=new developer()
+papa.designation()
+var raju=new dancer ()
+raju.learn("daily")
+var siri=new dancer ()
+siri.learn("halfday")
+
+//code stop and data validation
+
+function hospitel(name,id,op,testdetails){
+  if(op>28)
+  {
+    console.log("op time is over")
+  }
+switch(testdetails)
+{
+  case "WBC":
+    result=4.4
+    units="X10E3/UL"
+    lab=2
+   break;
+   case "RBC":
+     result=4.05
+     units="X10E6/UL"
+     lab=1
+  break;
+  case "hemoglobin":
+    result=14.83
+    units=g/dl
+    lab=1
+   break;
+   case "monocytes":
+     result=3
+     units=pg
+     lab=2
+  break;
+  }
+console.log(name,op,result,units,lab)
+}
+hospitel("sathish",1056743298,29,"RBC")
+
+  
+//class
+
+class  driving{
+  drivinglicencen="ka34567497689676"
+  dlstate="karnataka"
+  dlcountry="indian"
+  }
+var licence=new driving()
+console.log(licence.dlstate)
+
+
