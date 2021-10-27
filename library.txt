@@ -1,0 +1,132 @@
+//file1.mjs
+ export function family(rent,water,electricity)
+ {          
+  console.log(water)
+ }
+export function childrenstudy(studymoney,books,uniform)
+{
+  console.log(books)
+  }
+export function savings(salery,enjoyment)
+{
+  console.log(salery)
+  
+}
+
+//file2.mjs
+
+import{family,childrenstudy,savings} from '/file1.mjs'
+family(5000,500,2000)
+childrenstudy(15000,4000,2000)
+savings(10000,2000)
+
+//library
+
+export class family{
+  constructor(rent,water,electricity)
+  {
+    this.rent=rent
+   console.log(this.rent)
+  }
+}
+export class chstudy{
+  constructor(studymoney,books,uniform)
+  {
+    this.money=studymoney
+    switch(this.money)
+    {
+      case 8:
+       this.amount=15000
+        break;
+      case 9:
+        this.amount=19000
+        break;
+      case 10:
+        this.amount=20000
+      break;
+    }
+    console.log(this.amount)
+  }
+}
+
+export class savings{
+  constructor(enjoy){
+    this.enjoy=enjoy
+      if(this.enjoy>5000){
+        console.log("savings")
+         return
+        
+      }
+      }
+    }
+ 
+ //file2.mjs
+import{family,chstudy,savings}form '/.file1.mjs'
+var siri=new family("7000")
+var ramya=new chstudy(8)
+var rani=new savings(6000)
+
+//library
+
+export class sucess
+{
+    pass()
+    {
+        console.log("pass")
+    }
+}
+ export class failur{
+    fail()
+    {
+        console.log("fail")
+    }
+}
+ export class achivers{
+    award()
+    {
+  
+        console.log("award")
+    }
+}
+import{sucess,failur,achivers} from './library.mjs'
+
+var siri=new sucess()
+siri.pass();
+var ramya=new failur()
+ramya.fail();
+var priya=new achivers()
+priya.award();
+
+// library
+
+export class sucess
+{
+  constructor(p)
+  {
+    this.profession=p
+    console.log(this.profession)
+  }
+}
+let vanu=new sucess("profisser")
+let papa=new sucess("bussiness")
+let varun=new sucess(function(sucess,failure){
+  if( sucess == "frontend")
+  {
+    console.log(sucess)
+  }
+  if(failure == "teacher"){
+    console.log(failure)
+  }
+  
+})
+
+import{sucess}from './file1.mjs'
+varun.profession("webdev","teacher")
+
+//arrow function
+let siri=new sucess( (sucess,failure)=> console.log(failure) )
+siri.profession("webdev","professier")
+
+
+
+
