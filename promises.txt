@@ -1,0 +1,317 @@
+//promise
+
+class friends{
+  constructor(s){
+    this.shop=s
+  }
+}
+let siri=new friends(function(yes,no){
+    if(yes=="shopopend"){
+      console.log("dosa")
+    }
+    else{
+      console.log("bisckets")
+    }
+})
+siri.shop("shopond","shopclosed")
+ 
+//callback
+
+function system(bvh){
+   console.log("rating")
+   console.log("processer")
+   bvh()
+}
+
+function p1(){
+  console.log("balu-pc")
+}
+system(p1) 
+
+//callback
+
+function processer(designation,name,location,hugfc){
+  switch(location){
+    case "hcl":
+       place="hyd"
+      break
+    case "tcs":
+      place="bang"
+      break
+  }
+  console.log(designation,name,place)
+  hugfc()
+}
+
+function fun1(){
+  console.log("balu-pc")
+}
+processer("programer","junior","tcs",fun1)
+
+// polymorphism
+
+class school{
+  constructor(s,c,l){
+    this.shool=s
+    this.class=c
+    this.location=l
+  }
+  passion(wh)
+  {
+    this.workinghours=wh
+  }
+  recognisation(g){
+    this.grade=g
+    switch(this.grade){
+      case "A":
+        console.log("topper")
+        break
+         case "B":
+        console.log("firstclass")
+        break
+         case "C":
+        console.log("secondclass")
+        break
+        
+    }
+  }
+}
+let ravali=new school("nps","1-10","nb")
+let pravali=new school("nnmu","5-10","n")
+let kavya=new school("nps","1-10","nb")
+ravali.passion()
+
+class collage extends school{
+  constructor(c,s,l){
+    super("nps","1-10","nb")
+     this.class=c
+    this.stream=s
+    this.marks=0
+   this.location=l
+  }
+  passion(wh)
+  {
+    this.perdaywh=wh
+    switch( this.perdaywh){
+      case 3:
+        this.marks=400
+        break
+        case 5:
+        this.marks=500
+        break
+        case 9:
+        this.marks=700
+        break
+    
+    }
+    console.log(this.marks)
+  }
+  recognisation(m){
+
+    switch(m){
+      case 900:
+        console.log("topper")
+        break
+         case 700:
+        console.log("firstclass")
+        break
+         case 400:
+        console.log("secondclass")
+        break
+        
+    }
+  }
+}
+
+let rava=new collage("nps","mpc","nb")
+let prava=new collage("np","Bipc","h")
+let kava=new collage("v","cec","k")
+rava.passion(3)
+rava.recognisation(700)
+pravali.recognisation("B")
+
+//promises
+
+class sucess
+{
+  constructor(p)
+  {
+    this.profession=p
+    console.log(this.profession)
+  }
+}
+
+
+let varun=new sucess(function(resolve,reject){
+  reject("an error")
+})
+varun.profession(result=>console.log(result),
+error=>console.log(error)
+);
+
+// promises
+class tickets{
+  constructor(b){
+    this.book=b
+  }
+}
+let papa=new tickets((yes,no)=>{
+ setTimeout(()=>yes("tickets are done"),3000)
+});
+papa.book(result=>console.log(result),
+ error=>console.log(error)
+);
+
+//promise chaining
+
+new Promise(function(resolve, reject) {
+
+  setTimeout(() => resolve("hii"), 1000); // (*)
+
+}).then(function(result) { // (**)
+
+  console.log(result); // 1
+  return result+" " +"sir";
+
+}).then(function(result) { // (***)
+
+  console.log(result); // 2
+  return result+" " + "welcome";
+
+}).then(function(result) {
+
+  console.log(result); // 4
+  return result+" " +"have a nice day";
+
+}).then(function(result) {
+
+  console.log(result); // 4
+  return result +"bye";
+
+});
+
+//chaining
+
+let promise=new Promise(function(resolve, reject) {
+
+  setTimeout(() => resolve("hii"), 1000); // (*)
+
+})
+promise.then(function(result) { // (**)
+
+  console.log(result); // 1
+  return result+" " +"sir";
+
+})
+promise.then(function(result) { // (***)
+
+  console.log(result); // 2
+  return result+" " + "welcome";
+
+})
+promise.then(function(result) {
+
+  console.log(result); // 4
+  return result+" " +"have a nice day";
+
+})
+promise.then(function(result) {
+
+  console.log(result); // 4
+  return result+" " +"bye";
+
+});
+
+// promises on array
+
+class array{
+  constructor(a){
+    this.array=a
+  }
+  method()
+  {
+    return "reactjs"
+  }
+}
+var rani=new array((sucess,failure)=>["html","css","js"])
+ret=rani.array()
+console.log(ret)
+console.log(rani.method())
+
+//arrays
+
+let flowers= ["rose","jasmin","sunflower"]
+console.log(flowers[0])  //name of zero flower
+flowers[1]= "lilly"      // changing jasmin into lilly
+console.log(flowers[1]) 
+console.log(flowers.length) //length of an arrays
+//loop
+for (let i of flowers){
+  console.log(i)   
+}
+for (let i in  flowers){
+  console.log(flowers[i])
+}
+for (let i = 0; i < flowers.length; i++) {
+  console.log( flowers[i] );
+}
+flowers.push("lotus")  //pushing an element
+flowers.pop()          //popping an element
+flowers.shift()        //shift
+flowers.unshift("beauty")   //unshift
+console.log(flowers)
+//muliti dimensional arrays
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log( matrix[1][1] );
+let names=[
+  ["hari","rani", ["jansi"]],
+  ["sasi","priya"],
+  ["ranji","divya"]
+  ];
+  console.log( names[0][2][0] );
+
+//class method with infinite objects
+
+class specification{
+  constructor(model,bcapacity,freq,btype){
+  this.model=model
+  this.batteryc=bcapacity
+  this.freq=freq
+  this.batteryt=btype
+  console.log(this.batteryt)
+  }
+}
+var rani=new specification("exide","12volt","50hz","sealed")
+var pravani=new specification("amd","12volt","50hz","sealed")
+
+//class method with one object
+
+let specificatio = {
+  model:"exide",
+  bcapacity:"12volt",
+  freq:"50hz",
+  btype:"sealed",
+  computer(){
+    console.log(specificatio.freq)
+  }
+}
+specificatio.computer()
+//one object
+let jv = {
+   position:"cashier",
+   type:"howely",
+}
+     console.log(jv.position) 
+ //object.keys,object.values,object.entries
+for (let value of Object.entries(jv)) {
+  console.log(value); 
+}
+
+
+
+
