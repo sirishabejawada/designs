@@ -1,0 +1,231 @@
+class human{
+  constructor(human,man){
+    this.human=human
+    this.man=man
+  }
+  display(){
+    console.log(this.man)
+  }
+}
+let param=new human("human","man") 
+let para=new human("hum","nan") 
+
+class person extends human{
+  constructor(name,age,gender){
+    super()
+    this.name=name
+    this.age=age
+    this.gender=gender
+  }
+  details(){
+    console.log(this.name)
+  }
+}
+let rani=new person("siri",45,"female")
+rani.details()
+param.display()
+para.display()
+
+//reactjs
+//state using class
+import React, {Component} from 'react'
+
+export default class App extends Component{
+  state = {
+    name:"pavani",
+    place:"ongole",
+  }
+  render(){
+    return(
+      <div>
+        <h1>i am{this.state.name} from {this.state.place} </h1>
+      </div>
+    )
+  }
+}
+
+// state using function
+
+import React,{useState} from 'react'
+const Paper = () =>{
+  const [name,setName]= useState("world")
+    return(
+        <div>
+            <h4>hii{name} </h4>
+        </div>
+    )
+}
+export default Paper
+
+//props
+
+import React, { Component} from 'react'
+import Pen from './Book.js';
+export default class App extends Component{
+  state = {
+    name:"sasi"
+  }
+  render(){
+    return(
+      <div>
+        <Pen name={this.state.name} />
+      </div>
+    )
+  }
+}
+import React, { Component} from 'react'
+
+export default class Pen extends Component{
+  render(){
+    return(
+      <div>
+        <h3>{this.props.name} </h3>
+      </div>
+    )
+  }
+}
+
+//html code
+
+<hthm>
+    <head>
+        <title>
+introduction to html
+        </title>
+    </head>
+    <body bgcolor="skyblue">
+        <h1>mobile</h1> 
+        <h2>mobile</h2> 
+        <h3>mobile</h3> 
+            <h4>mobile</h4> 
+            <h5>mobile</h5> 
+            <h6>mobile</h6> 
+    <p>myself siri</p>
+    <hr><hr>
+    <p>myself siri <br> from ongole</p>
+    <p><b>hello world</b></p>
+    <i>hello world</i><br>
+    <u>hello world</u> good morning<br>
+    <del>3600</del>2000<br>
+    5<sup>7</sup><br>
+    h<sub>2</sub>0<br>
+    <strong>it is same as bold</strong><br>
+    <emp>it is an emp</emp><br>
+    <small>it shows small font</small><br>
+    <p><font face="Times new roman" size="3" color="yellow">welcome to html</font><p>
+        <a href="https://www.w3schools.com/">click here</a>
+    </body>
+</hthm>
+
+//second html
+<html>
+    <head>
+        <title>
+    Basic HTML
+        </title>
+    </head>
+    <body bgcolor="black" text="white">
+    <p><u>Stories</u>for<small> kids</small> bring forth a lot of childhood <emp>memories</emp> for adults and mesmerize children’s imagination with fancy characters.<br>
+         Most people associate their <del>childod</del>childhood with listening to enchanting tales of <i>kings, queens, princes, princesses</i> and magical elements filled with awe and glory.<br>
+          When you try to remember the best times of your childhood, don’t you get reminded of the bedtime stories told by your grandparents? We all do! Why have stories been so specia<br>
+           Let’s discuss in detail about the most <b>loved</b> small stories for kids in English. </p>
+           <hr>
+           Bejawada<sup>sirisha</sup><br>
+           sirisha<sub>bejawada</sub>
+           <hr><hr>
+          <h1> My </h1><h6>self</h6> <h2>sirisha</h2> <h5>i</h5> <h3>completed</h3> <h4>my B.Tech </h4>
+          <p><font color="orange" face="courier" size="7">hello siri</font></p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>
+introduction to html
+        </title>
+    </head>
+    <body background="C:\Users\susmi\Downloads\fl.png ">
+<img src="C:\Users\susmi\Downloads\app.png" alt="no img" width=100px height=50px align="right"/>
+<a href="https://www.w3schools.com/"><img src="C:\Users\susmi\Downloads\w3.png" alt="no img"  width=100px height=50px /></a><br>
+  <a href="https://www.w3schools.com/">w3 schools </a> 
+  <h1>lists</h1>
+<ol type="A">
+    <li>apple</li>
+    <li>grapes</li>
+    <li>banana</li>
+</ol>
+<ul type="square">
+    <li>carrot</li>
+    <li>mirchi</li>
+    <li>potato</li> 
+</ul>
+<dl>
+    <dt>html</dt>
+    <dd>hyper text markup language</dd>
+</dl>
+<h1>marks in exams</h1>
+<table border="2" bordercolor="red" rcellpadding="8"cellspacing="5" >
+    <caption>Details</caption>
+
+    
+        <th rowspan = 3>name</th>
+        <th>marks</th>
+        <th>percentage</th>
+    
+    
+<tbody>
+    <tr>
+        <td>rani</td>
+        <td>500</td>
+        <td>90%</td>
+    </tr>
+</tbody>
+    <tr>
+        <td  colspan=2>raju</td>
+        <td>80%</td>
+    </tr>
+    <tfoot >
+    <tr>
+        <td>ravi</td>
+        <td>300</td>
+        <td>70%</td>
+    </tr>
+    </tfoot>
+</table>
+<h2>form</h2>
+<form>
+
+<label>name:</label>
+<input type="text" placeholder="enter your name"/><br><br>
+<label>email:</label>
+<input type="email" placeholder="enter mailid"/><br><br>
+<label>password:</label>
+<input type="password" placeholder="enter your name"/><br><br>
+<label>number:</label>
+<input type="number" placeholder="enter valid number"/><br><br>
+<label>dob</label>
+<input type="dob" ><br><br>
+<label>gender:</label>
+<input type="radio" name="gender" />male
+<input type="radio" name="gender"/>female<br><br>
+<label>address:</label>
+<textarea placeholder="address"></textarea><br><br>
+<label>hobbies:</label><br>
+<input type="checkbox">games
+<input type="checkbox">reading
+<input type="checkbox">gardening<br><br>
+<label>branch</label>
+<select>
+    <option>select option</option>
+    <option>css</option>
+    <option>ece</option>
+    <option>it</option>
+    <option>eee</option>
+</select><br><br>
+<button>submit</button>
+<button>reset</button>
+
+
+</form>
+</body>
+</html>
