@@ -1,0 +1,230 @@
+<div>
+<h2>Audio</h2>
+<audio controls>
+<source src="C:\Users\susmi\Downloads\twinkle.mp3">
+</audio>
+</div>
+<div>
+<h2>video</h2>
+<video controls>
+<source src="C:\Users\susmi\Downloads\SampleVideo_1280x720_20mb.mp4" >
+</video>
+</div>
+<div>
+<h2>iframe</h2>
+<iframe src="https://www.urbanpro.com/hyderabad/qspiders-kukatpally/9160412" ></iframe><br>
+</div>
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZmtLzRJh8n8" title="YouTube video player"></iframe>
+</div>
+ <p>HTML stands for Hyper Text Markup Language, which is the most widely used language on Web to develop web pages. HTML was created by Berners-Lee in late 1991
+   
+ <div class="two"> but "HTML 2.0" was the first standard HTML specification which was published in 1995. HTML 4.01 was a major version of HTML and it was published in late 1999. Though HTML</div>
+<div class="one">
+    4.01 version is widely used but currently we are having HTML-5 version which is an extension to HTML 4.01, and this version was published in 2012.</div>
+<div class="three">HTML stands for Hyper Text Markup Language, which is the most widely used language on Web to develop web pages. HTML was created by Berners-Lee in late 1991
+</div>
+<div id="no">
+    <a href="./webpage.html"> home</a>
+    <a href="#"> service</a>
+    <a href="#"> about</a>
+    <a href="#"> contact us</a>
+</div>
+
+
+<ol>
+    <li>hello</li>
+    <li>hii</li>
+    <li>good morning</li>
+</ol>
+
+<ul>
+    <li class="cap">hello</li>
+    <li class="tap">hii</li>
+    <li clsss="top">good morning</li>
+</ul>
+
+
+/* css code */
+
+div{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    width:100%;
+}
+h2{
+    margin:20px;
+    color:blueviolet;
+    font-family:sans-serif;
+}
+iframe{
+    border:2px solid black;
+    margin:20px;
+}
+video{
+    width:300px;
+}
+p{
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-style: italic;
+}
+.two{
+    font-family:Edwardian Script ITC,Algerian,Harlow Solid Italic;
+}
+.one{
+    font-family:Blackadder ITC;
+    border:1px solid red;
+    margin:10px;
+
+}
+.three{
+    font-family:praise,Blackadder ITC;
+    border:1px solid greenyellow;
+}
+a:link{
+    color:gold;
+    text-decoration: none;
+    margin-right:40px;
+    background-color: white;
+    align-items: center;
+justify-content: center;
+display:flex;
+border-radius:5px;
+padding:10px;
+}
+a:hover{
+    color:tomato;
+    background-color:wheat;
+}
+a:active{
+    color:yellow;
+}
+a:visited{
+    color:seagreen;
+}
+
+#no{
+background-color:darkred;
+height:60px;
+margin-top:20px;
+}
+.cap{
+    list-style-type:square ;
+    list-style-position:inside;
+    border:1px solid red;
+    
+
+}
+.tap{
+    list-style-type:upper-alpha ;
+    list-style-position:outside;
+    border:1px solid green;
+    margin-top:5px;
+}
+li{
+    background-color: honeydew;
+}
+ol{
+    background-color: khaki;
+    height:100px;
+    padding:20px;
+}
+ol li{
+    background-color:pink;
+    margin:8px;
+    padding:3px;
+
+}
+/*position topic*/
+
+<html>
+    <head>
+        <link rel="stylesheet" href="position.css">
+        <title>
+              position
+        </title>
+
+    </head>
+   
+    <body>
+
+<img src="C:\Users\susmi\OneDrive\Documents\red.png" class="one">
+<p class="hii">hii how are you </p><br><br><br><br><br><br><br>
+<div class="hello" >
+    position property specifies the type of position
+</div><br><br><br><br><br><br><br><br><br><br>
+<div class="two">
+    compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions. Alongside HTML and CSS,JavaScript is a dynamic computer programming language.
+    It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted 
+    programming language with object-oriented capabilities.
+</div><br><br><br><br><br><br><br><br><br><br>
+<div class="open"> 
+    compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions. Alongside HTML and CSS,JavaScript is a dynamic computer programming language.
+    It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted 
+    programming language with object-oriented capabilities.
+</div><br><br><br><br><br><br><br><br><br>
+<div class="cp"> www <span class="up" >world wide web</span></div><br><br><br><br><br><br>
+<p class="close">compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions. Alongside HTML and CSS,JavaScript is a dynamic computer programming language.
+    It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted 
+    programming language with object-oriented capabilities. </p>
+
+
+    </body>
+</html>
+
+/*css code*/
+ 
+.hello{
+    background-color:pink;
+     width:350px;
+     padding:10px;
+     position:sticky;
+     top:1px;
+     
+}
+.hii{
+    position:relative;
+}
+.one{
+    position:fixed;
+    top:20px;
+    left:990px;
+
+
+}
+.open{
+    overflow: scroll;
+    height:50px;
+    width:250px;
+    background-color:aquamarine;
+    border:1px solid black;
+}
+.cp{
+    border:1px solid black;
+    width:300px;
+    height:30px;
+    background-color:chocolate;
+}
+.up{
+   background-color: blanchedalmond;
+   margin-left:50px;
+   padding:10px;
+   visibility:hidden;
+}
+.cp:hover .up{
+    visibility: visible;
+
+}
+.close{
+    overflow:hidden;
+    height:50px;
+    width:250px;
+    border:1px solid black;
+}
+
+
+
