@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" >
+    <meta  name="viewport" content="width=device-width,initial-scale=1"  >
+    <link rel="stylesheet" href="boot.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+        <title>bootpractise</title>
+    </head>
+    <body>
+        <div class="nana">
+          <h5 class=" rani text-danger">U.K</h5>
+        </div>
+
+
+        <div class="container row mx-5">
+            <div class="col-4 ">
+           <h6 class="text-muted">Hello I'm</h6>
+           <h4 class="text-danger">WEB DESIGNER</h4>
+           <h5>Sirisha</h5>
+           <p class="text-muted">Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Nulla, consectetur.</p>
+               <button type="button" class="btn btn-danger btn-sm">My Work</button>
+           </p>
+           </div>
+           <div class="col-4"></div>
+           <div class="col-4 " > 
+           <img src="C:\Users\susmi\Downloads\girl.webp" width="250px" height="250px" class="rounded-circle">
+           </div>
+            </div>
+
+        </div>
+       
+       <section class="papa">
+        <div class= "amma"> <h5 class="app">ABOUT ME</h5></div><br><br>
+       <div class=" container mx-4  my-4 row">
+           <div class="col-6">
+            <h5> Lorem ipsum dolor sit amet consectetur <br>adipisicing elit</h5>
+       <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+         Dolorum voluptatem iste neque asperiores magnam cupiditate <br>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+         illum possimus velit nesciunt tempora!</p>
+         <div class="row">
+            <div class=" col-3 ">
+               <h5 class="app">100</h5>
+               <p class="text-muted">PROJ COMPLETED</p>
+            </div>
+            <div class=" col-3">
+               <h5 class="app">90</h5>
+               <p class="text-muted">HAPPY CLIENTS</p>
+            </div>
+            <div class="col-3">
+               <h5 class="app">95</h5>
+               <p class="text-muted">POSITIVE REVIEWS</p>
+            </div>
+            </div>
+            <button type="button" class="btn btn-danger btn-sm">Dowload CV</button>
+           <i class="bi bi-facebook"></i>
+           <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i><br><br>
+           </div>
+
+            <div class="col-6 mt-2">
+                <h6>Html</h6>
+        <div class="progress mb-4" style="height:5px;">
+            <div class="progress-bar bg-danger" style="width:15%"></div>
+        </div>
+        <h6>Css</h6>
+        <div class="progress mb-4" style="height:5px;">
+           <div class="progress-bar bg-danger" style="width:25%"></div>
+       </div>
+       <h6>React</h6>
+       <div class="progress mb-4" style="height:5px;">
+           <div class="progress-bar bg-danger" style="width:35%"></div>
+       </div>
+       <h6>Java Script</h6>
+       <div class="progress mb-4" style="height:5px;">
+        <div class="progress-bar bg-danger" style="width:45%"></div>
+    </div>
+       </div>
+       </div>
+       </section>
+
+     
+        <section class="bat">
+        <div class= "amma"> <h5 claas="app">What I'DO</h5></div><br><br>
+        <div class="row">
+        <div class=" col-3">
+            <div class="card">
+            <i class=" nam bi bi-award"></i><br>
+            <h5 class="card-title">  Web Development</h5>
+              <p class="body" >Lorem ipsum dolor sit amet consectetur<br>
+                 adipisicing elit</p>
+            </div>
+            </div>
+            <div class=" col-1"></div>
+            <div class=" col-3">
+                <div class="card">
+                <i class=" nam bi bi-lightbulb-fill"></i><br>
+                <h5 class="card-title">  Creative Design</h5>
+                  <p class="body" >Lorem ipsum dolor sit amet consectetur<br>
+                     adipisicing elit</p>
+                </div>
+                </div>
+                <div class=" col-1"></div>
+                <div class=" col-3">
+                    <div class="card">
+            <i class=" nam bi bi-image"></i><br>
+        <h5 class="card-title"> Photo Shop</h5>
+         <p class="body" >Lorem ipsum dolor sit amet consectetur<br>
+             adipisicing elit</p>
+          </div>
+        </div>
+    </section><br><br>
+       
+        <section class="cat">
+            <div class= "jug mt-4"><h5 claas="ram">Latest Works</h5></div>
+        <div class="container row mx-4">
+            <div class="col-md-4">
+                <div class="card card-cent" style="width:300px;">
+             <img src="C:\Users\susmi\Downloads\team.jpg" class="card-img">
+             <h6 class="card-title">Team Section</h6>
+             <p class="text-danger">Live Demo</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-cent" style="width:300px;">
+             <img src=" C:\Users\susmi\Downloads\theme.jpg" class="card-img">
+             <h6 class="card-title">App Landing Page</h6>
+             <p class="text-danger">Live Demo</p>
+            </div>
+            </div>
+            <div class="col-md-4" style="width:300px;">
+                <div class="card card-cent">
+             <img src="C:\Users\susmi\Downloads\section.jpg" class="card-img">
+             <h6 class="card-title">Creative Team Section</h6>
+             <p class="text-danger">Live Demo</p>
+            </div>
+            </div>
+            
+
+        </div>
+        </section>
+         <section class="dog">
+        <div class="container row">
+            <div class="col-md-4">
+                <div class="card card-cent" style="width:300px;">
+             <img src="C:\Users\susmi\Downloads\top.jpg" class="card-img">
+             <h6 class="card-title">Toggle Pricing Table</h6>
+             <p class="text-danger">Live Demo</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-cent" style="width:300px;">
+             <img src=" C:\Users\susmi\Downloads\gallery.jpg" class="card-img">
+             <h6 class="card-title">Bootstrap 5 Image Gallery</h6>
+             <p class="text-danger">Live Demo</p>
+            </div>
+            </div>
+            <div class="col-md-4" style="width:300px;">
+                <div class="card card-cent">
+             <img src="C:\Users\susmi\Downloads\filter.jpg" class="card-img">
+             <h6 class="card-title">Filterable Image Gallery</h6>
+             <p class="text-danger">Live Demo</p>
+            </div>
+            </div>
+            
+
+        </div>
+    
+    </section>
+
+        <div class="bg-danger text-white head"> 
+            <h4>I'm Available For Freelancer Project</h4>
+            <div><h6 class="gun">Hire Me</h6></div>
+        </div>
+        
+       </section>
+        
+        </body>
+        </html>
+
+
+
+                                     
+
+CSS CODE 
+
+.text-muted{
+    font-family:monospace;
+    font-size: smaller;
+    
+}
+.rani{
+    margin-bottom: 140px;
+}
+.papa{
+    margin-top:200px;
+    margin-left:50px;
+}
+.cat{
+    margin-top:150px;
+    margin-left:60px;
+}
+.bat{
+    margin-top:100px;
+    margin-left:100px;
+}
+.dog{
+
+    margin-left:90px;
+}
+.amma{
+align-items: center;
+justify-content: center;
+display: flex;
+margin-top:200px;
+}
+.jug{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top:180px;
+    margin-bottom:50px; 
+}
+
+.nam{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 4px;
+}
+.card-cent{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.head{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height:200px;
+}
+.gun{
+    border:1px solid white;
+}
+.btn{
+    margin-right:20px;
+}
+.app{
+    font-weight: bold;
+}
+
