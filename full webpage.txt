@@ -1,0 +1,519 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="webpage.css">
+        <title>
+            webpage creating
+        </title>
+    </head>
+    <body>
+    
+        <div id="links">
+        <a href="https://www.w3schools.com/"> W3SCHOOLS</a>
+        <a href="https://www.w3schools.com/css/default.asp"> CSS</a>
+        <a href="https://www.w3schools.com/html/default.asp"> HTML</a>
+        <a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a>
+        <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">BOOTSTRAP</a>
+        </div>
+        <div class="one" style="position:relative">
+           <h2 style=" margin:10px;text-align:center;">CSS</h2>
+           <img src="C:\Users\susmi\OneDrive\Documents\my programs\.vscode\css.jpg" style="margin:5px">
+           <p class="pone"><b>Cascading Style Sheets,</b> fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.
+            CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, 
+            how columns are sized and laid out, what background images or colors are used, layout designs,
+            variations in display for different devices and screen sizes as well as a variety of other effects.and feel part of a web page. Using CSS, you can control the color of the text </p>
+            <div>
+                <h2 style="margin:10px;text-align:center;">HTML</h2>
+           <img src="C:\Users\susmi\OneDrive\Documents\my programs\.vscode\html.jpg" style="margin:5px">
+           <p class="pone"> <b>HTML </b>stands for <b>Hyper Text Markup Language,</b> which is the most widely used language on Web to develop web pages. HTML was created by Berners-Lee in late 1991
+                but "HTML 2.0" was the first standard HTML specification which was published in 1995. HTML 4.01 was a major version of HTML and it was published in late 1999. Though HTML
+                 4.01 version is widely used but currently we are having HTML-5 version which is an extension to HTML 4.01, and this version was published in 2012.</p>
+            </div> 
+            <div>
+                <h2 style="margin:15px;text-align:center;">JAVASCRIPT</h2>
+                <img src="C:\Users\susmi\OneDrive\Documents\my programs\.vscode\js.jpg" style="margin:5px">
+                <p class="pone"><b>JavaScript</b> , often abbreviated as<b> JS,</b> is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time 
+                    compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions. Alongside HTML and CSS,JavaScript is a dynamic computer programming language.
+                     It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted 
+                     programming language with object-oriented capabilities. </p>
+            </div>
+            <div>
+                <h2 style="margin:15px;text-align:center;">BOOTSTRAP</h2>
+                <img src="C:\Users\susmi\OneDrive\Documents\my programs\.vscode\boot.jpg" style="margin:5px">
+                <p class="pone">In the physical world, a <b>bootstrap</b>h is a small strap or loop at the back of a leather boot that enables you to pull the entire boot on and in general usage, bootstrapping is the 
+                    leveraging of a small initial effort into something larger and more significant. There is also a common expression, "pulling yourself up by your own bootstraps," meaning to leverage yourself to
+                     success from a small beginning.</p>
+            </div>
+
+        </div>
+        
+<form action="./submit.html" method="post"  style="position:absolute;right:10px; top:10px;">
+    <img src="C:\Users\susmi\OneDrive\Documents\my programs\.vscode\courses.jpg" style="width:90px;height:90px;float:right; margin:15px;"><br>
+    <h1>Course Registration</h1><br><br>
+    <label>name:</label>
+    <input type="test" placeholder="enter name" size="30"required><br><br><br>
+    <label>number:</label>
+    <input type="number" placeholder="enter mobile number" size="30"required><br><br><br>
+    <label>email:</label>
+    <input type="email" placeholder="enter mailid"size="30" required><br><br><br>
+    <label>password:</label>
+    <input type="password" placeholder="creat password"size="30" required><br><br><br>
+    <label>date of birth</label>
+    <input type="date"><br><br>
+    <label>gender:</label>
+    <input type="radio" name="male" >male
+    <input type="radio" name="male">female <br><br><br>
+    <label>select your course:</label>
+    <input list="course" >
+    <datalist id="course">
+        <option value="HTML">
+            <option value="CSS"> 
+                <option value="js"> 
+                    <option value="BOOTSTRAP">
+    </datalist><br><br>
+    <input type="submit"style="background-color:#fbceb1;padding-right:10px; margin:40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="reset" style="background-color:#fbceb1;padding-right:10px;">
+
+</form><br><br>
+<table>
+    <tr>
+        <th>s.no</th>
+        <th>course</th>
+        <th>fee</th>
+        <th>duration</th>
+        <th>hours</th>
+        <th>timings</th>
+        
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>HTML</td>
+        <td>5000</td>
+        <td>1 Months</td>
+        <td>daily 2hr</td>
+        <td>10AM-12PM</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>CSS</td>
+        <td>5000</td>
+        <td>1 Months</td>
+        <td>daily 2hr</td>
+        <td>10AM-12PM</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>JS</td>
+        <td>6000</td>
+        <td>1 Months</td>
+        <td>daily 2hr</td>
+        <td>10AM-12PM</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Bootstrap</td>
+        <td>4000</td>
+        <td>1 Month</td>
+        <td>daily 2hr</td>
+        <td>10AM-12PM</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td> all course</td>
+        <td>15000</td>
+        <td>3 Months</td>
+        <td>daily 2hr</td>
+        <td>10AM-12PM</td>
+    </tr>
+
+</table>
+   <img src="C:\Users\susmi\OneDrive\Documents\my programs\.vscode\alllogoes.png" style="width:300px;height:300px;position:absolute;top:145%;right:200px;">
+   
+<div class="foot">
+    <h4>For quries </h4>&nbsp;
+    <h4> contact us:9866321091</h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <h4>  Copyright&#169</h4>
+</div>
+
+    </body>
+</html>
+
+//CSS STYLING
+
+#links{
+    background-color: papayawhip;
+    height:50px;
+    width:70%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+  }
+  a:link{
+      text-decoration:none;
+      margin-right:20px;
+      font-size: larger;
+      padding:10px;
+      
+  
+  }
+  a:hover{
+      background-color:yellowgreen;
+      text-decoration: underline;
+  }
+  a:active{
+      color:yellow;
+  }
+  .one{
+      width:70%;
+  }
+  .pone{
+      font-family:Times New Roman;
+      text-align: justify;
+  
+  }
+  img{
+      width:100px;
+      height:100px;
+      margin:-15px;
+      float:left;
+  }
+  form{
+      background-color: powderblue;
+  }
+  label{
+      margin:10px;
+      color:darkmagenta;
+  }
+  h1{
+      text-align: center;
+  }
+  table,th,td{
+      border:1px solid rosybrown;
+      border-collapse: collapse;
+      text-align:center;
+      
+  }
+  th,td{
+      background-color:seashell;
+      padding:20px;
+  
+  
+  }
+  td:hover{
+      background-color: snow;
+  }
+  table{
+      margin:10px;
+  }
+  .foot{
+      margin:10px;
+      height:50px;
+      justify-content: center;
+      align-items:center;
+      display:flex;
+  }
+
+
+//main page 
+<html>
+    <head>
+        <link rel="stylesheet" href="webpage.css">
+        <title>
+            webpage creating
+        </title>
+    </head>
+    <body background="C:\Users\susmi\OneDrive\Desktop\back.jpg">
+    <div class="pen">
+        <img src="C:\Users\susmi\OneDrive\Documents\my programs\.vscode\courses.jpg" style="width:50px;height:50px; margin:15px;">
+        <div class="pencil">
+        <a href=#>HOME</a>
+        <a href=#>ABOUT</a>
+        <a href=#>SERVICE</a>
+        <a href=#>DESIGN</a>
+        <a href=#>CONTENT</a>
+     </div>
+     <div class="paper">
+      <input class="search" type="search" name="search" placeholder="search here">
+      <button class="but">Search</button>
+     </div>
+     </div>
+     <br><br><br><br><br><br><br>
+     <ol>
+         <li class="one">Web Design &</li>
+         <li class="two">Development</li>
+         <li class="one">Course</li>
+         
+     </ol>
+   <p class="three">Web Design is a specialisation of the designstream.They also use HTML<br>css,WYS editing softwear,make up validation etc..,<br>to create design elements </p>
+  <div class="finel"> 
+<button class="put">join us</button>
+</div>
+<div class="main">
+    <div class="login">
+<h4>Login Here</h4>
+</div>
+<input class="red" type="mail" name="name" placeholder="enter your email" required/><br><br><br>
+<input class="red" type="password" name="word" placeholder="enter password" required/><br><br><br><br>
+<div class="open">
+<button class="log">login</button>
+</div><br>
+<p>Don't have an account?<br> <a class="up" href="intro.html">sign up</a></p>
+
+</div>
+
+-->if you sign in means this 
+form will open-->
+
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="webpage.css">
+        <title>
+            webpage creating
+        </title>
+    </head>
+
+    <body background="C:\Users\susmi\OneDrive\Desktop\back.jpg">
+    <div class="pen">
+        <img src="C:\Users\susmi\OneDrive\Documents\my programs\.vscode\courses.jpg" style="width:50px;height:50px; margin:15px;">
+        <div class="pencil">
+        <a href=#>HOME</a>
+        <a href=#>ABOUT</a>
+        <a href=#>SERVICE</a>
+        <a href=#>DESIGN</a>
+        <a href=#>CONTENT</a>
+     </div>
+
+     <div class="paper">
+      <input class="search" type="search" name="search" placeholder="search here">
+      <button class="but">Search</button>
+     </div>
+     </div>
+
+     <br><br><br><br><br><br><br>
+     <ol>
+         <li class="one">Web Design &</li>
+         <li class="two">Development</li>
+         <li class="one">Course</li>
+         
+     </ol>
+
+   <p class="three">Web Design is a specialisation of the designstream.They also use HTML<br>css,WYS editing softwear,make up validation etc..,<br>to create design elements </p>
+  <div class="finel"> 
+<button class="put">join us</button>
+</div>
+
+<div class="main">
+    <div class="login">
+<h4>Login Here</h4>
+</div>
+
+<input class="red" type="mail" name="name" placeholder="enter your email" required/><br><br><br>
+<input class="red" type="password" name="word" placeholder="enter password" required/><br><br><br><br>
+<div class="open">
+<button class="log">login</button>
+</div><br>
+
+<p>Don't have an account?<br>
+     <a class="up" href="intro.html">sign up</a></p>
+
+</div>
+       </body>
+       </html>
+
+-->if u sub mit means 
+this is the page-->
+<html> 
+    <head>
+        <title>
+            submit
+        </title>
+
+    </head>
+    <style>
+        h1{
+            color:greenyellow;
+            text-align:center;
+
+        }
+        p{
+            color:blueviolet;
+            text-align:center;
+        
+           
+        }
+    </style>
+    <body>
+        <h1>SUCESSFULLY REGISTERED</h1>
+        <P>From tomorrow on words you can  <br>
+            start your online class using your<br> mailid and password</P>
+    </body>
+</html>
+
+
+       </body>
+       </html>
+//css 
+body{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+a{
+    color:white;
+}
+a:link{
+    text-decoration: none;
+    padding:20px;
+    margin:10px;
+    color:white;
+}
+a:hover{
+    color:yellow;
+}
+.one{
+    font-size: 40px;
+    color:white;
+}
+.two{
+    font-size: 50px;
+    color:orangered
+}
+.three{
+
+    font-size:15px ;
+    color:white;
+    margin:30px;
+    text-align: justify;
+}
+button{
+    background-color: orangered;
+    padding:8px;
+    border-radius: 5px;
+    padding-right: 10px;
+
+}
+ol,li{
+    list-style-type:none;
+    position:relative;
+}
+
+.main{
+    width:250px;
+    height:350px;
+    position:absolute;
+    top:160px;
+    right:20px;
+    padding:10px;
+    background-color: black;
+    border-radius:8px;
+    text-align: center;
+}
+h4{
+    color:orangered;
+    border:1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    width:150px;
+}
+.red{
+    background:transparent;
+    border-top:none;
+    border-right: none;
+    border-left:none;
+    font-family: Arial;
+    font-weight: bold;
+    color:white;
+    padding:10px;
+}
+.login{
+     justify-content: center;
+     align-items: center;
+     display:flex;
+
+}
+.finel{
+    width:150px;
+    height:80px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+
+}
+.pen{
+    position:relative;
+    width:90%;
+    height:50px;
+
+}
+.pencil{
+    position: absolute;
+    top:30px;
+    left:90px;
+    
+}
+.paper{
+    float:right;
+    position: absolute;
+    top:30px;
+    right:50px;
+    border:1px solid tomato;
+    border-radius: 5px;
+   
+}
+
+p{
+    color:white;
+    font-family: Verdana;
+    font-size: 13px;
+}
+
+
+.log{
+    
+    background-color:tomato;
+    border-radius: 10px;
+    width:100px;
+}
+.but{
+    width:30%;
+    height:30px;
+    padding-top:20px;
+    padding-right: 13px;
+    color:pink;
+    border:1px solid tomato;
+    margin-top:10px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    position:absolute;
+    top:-10px;
+    left:175px;
+}
+.search{
+   border:none;
+   padding:8px;
+   width:250px;
+   background:transparent;
+   color:white;
+   
+}
+.up{
+    color:tomato;
+
+}
+.put{
+    width:50%;
+    height:30px;
+    padding: 10px;
+    border:1px solid tomato;
+    margin-top:10px;
+    font-size: 15px; 
+    justify-content: center;
+    align-items: center;
+    display:flex;
+
+}
